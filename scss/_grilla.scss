@@ -1,0 +1,46 @@
+/*Grilla */
+
+.grid-container {
+	display: grid;
+	margin: 40px 0 40px 0;
+	grid-template-columns: repeat(4,25%);
+	grid-template-rows: repeat(3,200px);
+	gap: 1px 1px;
+	text-align: center;
+	justify-content: stretch;
+	font-size: 1.5rem;
+	grid-template-areas:
+	"bannerUno bannerUno bannerUno bannerUno"
+	"noticiaDos noticiaDos noticiaTres noticiaCuatro"
+	"noticiaCinco noticiaSeis noticiaSiete noticiaCuatro";
+}
+
+.bannerUno {
+	grid-area: bannerUno;
+	background-color: #6277a5;
+}
+.noticiaTres {
+	grid-area: noticiaTres;
+	background-color: #80518f;
+}
+.noticiaDos {
+	grid-area: noticiaDos;
+	background-color: #837a8f;
+}
+.noticiaCuatro {
+	grid-area: noticiaCuatro;
+	background-color: #c263d4;
+}
+.noticiaCinco {
+	grid-area: noticiaCinco;
+	background-color: #50D8C8;
+}
+.noticiaSeis {
+	grid-area: noticiaSeis;
+	background-color: #ab62ff;
+}
+.noticiaSiete {
+	grid-area: noticiaSiete;
+	background-color: #655c85;
+}
+
