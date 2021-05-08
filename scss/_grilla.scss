@@ -11,36 +11,28 @@
 	font-size: 1.5rem;
 	grid-template-areas:
 	"bannerUno bannerUno bannerUno bannerUno"
-	"noticiaDos noticiaDos noticiaTres noticiaCuatro"
-	"noticiaCinco noticiaSeis noticiaSiete noticiaCuatro";
+	"noticiaDos noticiaDos noticiaTres noticiaTres"
+	"noticiaCuatro noticiaCuatro noticiaCinco noticiaCinco";
 }
 
 .bannerUno {
 	grid-area: bannerUno;
-	background-color: #6277a5;
+	background-color: #e9e9e9;
+	
 }
 .noticiaTres {
 	grid-area: noticiaTres;
-	background-color: #80518f;
+	background-color: #f3f3f3;
 }
 .noticiaDos {
 	grid-area: noticiaDos;
-	background-color: #837a8f;
+	background-color: #f3f3f3;
 }
 .noticiaCuatro {
 	grid-area: noticiaCuatro;
-	background-color: #c263d4;
+	background-color: #e9e9e9;
 }
 .noticiaCinco {
 	grid-area: noticiaCinco;
-	background-color: #50D8C8;
+	background-color: #e9e9e9;
 }
-.noticiaSeis {
-	grid-area: noticiaSeis;
-	background-color: #ab62ff;
-}
-.noticiaSiete {
-	grid-area: noticiaSiete;
-	background-color: #655c85;
-}
-

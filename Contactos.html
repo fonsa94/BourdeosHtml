@@ -17,7 +17,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="Home.html">Home</a>
+      <a class="navbar-brand" href="Index.html">Home</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -42,55 +42,91 @@
   </nav>
       </nav>
         <br>
-    <form class="card text-center">
-        <fieldset class="fw-bold">
-            <LEgend >Informacion Personal</LEgend>
-<br><br>
-<label for="Email">Email</label>
-<input type="text" placeholder="ingrese su email" id="Email">            
-        <br><br>
         
-               <label for="nombre">Nombre</label>
-               <input type="text" placeholder="ingrese su nombre"id= nombre >
-               <br><br>
-    
-               <label for="apellido">Apellido</label>
-               <input type="text" placeholder="ingrese su Apellido"id= apellido >
-       <br><br>
-       <label for="EDAD">Edad del consumidor</label>
-       <select name="" id="talles">
-       <option value="">18 -24</option>
-       <option value="">24-36</option>
-       <option value="">36-48</option>
-       <option value="">48-99</option>
-       </select>
-       <br><br>
-       <h3>DEJE SU COMENTARIO</h3>  
-<textarea name="" id="" cols="30" rows="10"></textarea>
-       <br>
-       <input type="submit">
-       <input type="reset">
-       <br>
-
-
-       ¿desea recibir el newsletter? <input type="checkbox">
-<br>
-       
-       
-       
-       
-           </fieldset>
-       
-       
-       
-       
-           </form>
 <br><br>
-
-           <footer class="lead">
-            <p class="float-end"><a href="#">Back to top</a></p>
-            <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
+<div class="container"> <div class=" text-center mt-5 ">
+  <h1 class="titulo">CONTACTANOS</h1>
+</div>
+<div class="row ">
+  <div class="col-lg-7 mx-auto">
+      <div class="card1 mt-2 mx-auto p-4 bg-light">
+          <div class="card-body bg-light">
+              <div class="container">
+                  <form id="contact-form" role="form">
+                      <div class="controls">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group"> <label for="form_name">Nombre *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required."> </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group"> <label for="form_lastname">Apellido *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."> </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group"> <label for="form_need">Que te gusta? *</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                          <option value="" selected disabled>--Contenidos--</option>
+                                          <option>Noticias</option>
+                                          <option>Descuentos</option>
+                                          <option>nuevo Blog</option>
+                                          <option>TODO!</option>
+                                      </select> </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group"> <label for="form_message">Dejanos un mensaje *</label> <textarea id="form_message" name="message" class="form-control" placeholder="ESCRIBE AQUI." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                              </div>
+                              <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send Message"> </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div> 
+  </div> 
+</div>
+</div>
+<br><br></br>
+<div class="pepito container-fluid pb-0 mb-0 justify-content-center text-light ">
+  <footer >
+      <div class="row my-5 justify-content-center py-5">
+          <div class="col-11">
+              <div class="row ">
+                  <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                      <h3 class="text-muted mb-md-0 mb-5 bold-text">BurdeosWines.</h3>
+                  </div>
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                      <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                      <ul class="list-unstyled">
+                          <li>Home</li> <a href="Index.html"></a>
+                          <li>About</li> <a href=""></a>                     
+                      </ul>
+                  </div>
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                      <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>Direccion</b></h6>
+                      <p class="mb-1">Calle Falsa 123</p>
+                      <p>47,Springfield</p>
+                  </div>
+              </div>
+              <div class="row ">
+                  <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                      <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> BurdeosWines All Rights Reserved.</small>
+                  </div>
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                      <h6 class="mt-55 mt-2 text-muted bold-text"><b>LISA SIMPSONS</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> lisasimp@gmail.com</small>
+                  </div>
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                      <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> Elrishawarma@gmail.com</small>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

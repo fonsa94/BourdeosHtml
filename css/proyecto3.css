@@ -1,59 +1,173 @@
 @charset "UTF-8";
-h1 {
-  font-style: italic;
-  font-weight: normal;
-  color: black;
-  font-size: 50px;
-  font-family: 'Akaya Telivigala', cursive;
-  text-align: center;
-  text-transform: none;
-  background-color: #eeeeee; }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
 
-.contenedor {
-  max-width: 1000px;
-  width: 70%;
+body {
+  background: #ebecf0;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh; }
+  body a {
+    text-decoration: none;
+    color: #172b4d; }
+  body h1 {
+    font-family: "Song Myung", serif; }
+  body .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    animation-duration: 7s;
+    animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.imagenCentro {
+  width: 50%;
   margin: 0 auto; }
-  .contenedor .tarjeta {
-    background-color: #cccccc;
-    border-radius: 15px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
+
+:root {
+  font-size: 16px;
+  --card-img-height: 200px; }
+
+h1 {
+  margin-bottom: 40px; }
+
+label {
+  color: #333; }
+
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin-left: 3px; }
+
+.form-group {
+  margin-bottom: 40px;
+  justify-content: center; }
+
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px; }
+
+.card1 {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.card-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in-out; }
+
+.card {
+  align-self: flex-start;
+  position: relative;
+  width: 325px;
+  min-width: 275px;
+  margin: 1.25rem 0.75rem;
+  background: white;
+  transition: all 300ms ease-in-out; }
+  .card .card-img {
+    visibility: hidden;
+    width: 100%;
+    height: var(--card-img-height);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .card .card-img-hovered {
+    --card-img-hovered-overlay: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      );
+    transition: all 350ms ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    height: var(--card-img-height);
+    top: 0; }
+  .card .card-info {
     position: relative;
-    margin-bottom: 50px; }
-  .contenedor .tarjeta__img {
-    width: 225px;
-    height: 220px;
-    margin-right: 10px; }
-  .contenedor .tarjeta__titulo {
-    font-size: 1.5rem;
-    margin-bottom: 20px; }
-  .contenedor .tarjeta__parrafo {
-    line-height: 28px;
-    font-size: 1rem; }
-  .contenedor .boton {
-    height: 60px;
-    padding: 20px;
-    background-color: white;
-    color: #161616;
-    display: inline-block;
-    text-decoration: none; }
+    padding: 0.75rem 1.25rem;
+    transition: all 200ms ease-in-out; }
+    .card .card-info .card-about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      transition: all 200ms ease-in-out; }
+      .card .card-info .card-about .card-tag {
+        width: 60px;
+        max-width: 100px;
+        padding: 0.2rem 0.5rem;
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: #505f79;
+        color: #fff; }
+        .card .card-info .card-about .card-tag.tag-news {
+          background: #36b37e; }
+        .card .card-info .card-about .card-tag.tag-deals {
+          background: #ffab00; }
+        .card .card-info .card-about .card-tag.tag-politics {
+          width: 71px;
+          background: #ff5630; }
+    .card .card-info .card-title {
+      z-index: 10;
+      font-size: 1.5rem;
+      padding-bottom: 0.75rem;
+      transition: all 350ms ease-in-out; }
+    .card .card-info .card-creator {
+      padding-bottom: 0.75rem;
+      transition: all 250ms ease-in-out; }
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0px 15px 35px rgba(227, 252, 239, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
+    transform: scale(1.025); }
+    .card:hover .card-img-hovered {
+      --card-img-hovered-overlay: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.65)
+        );
+      height: 100%; }
+    .card:hover .card-about,
+    .card:hover .card-creator {
+      opacity: 0; }
+    .card:hover .card-info {
+      background-color: transparent; }
+    .card:hover .card-title {
+      color: #ebecf0;
+      transform: translate(0, 40px); }
 
-.button {
-  display: inline-block;
-  border-radius: 3px;
-  padding: 7px 12px;
-  border: 1px solid #D5D5D5;
-  background-image: linear-gradient(#EEE, #DDD);
-  font: 700 13px/18px Helvetica, arial; }
+.card-1 .card-img,
+.card-1 .card-img-hovered {
+  background-image: var(--card-img-hovered-overlay), url(https://revistaadega.uol.com.br/media/importacao_de_vinho_no_brasil_em_2018_foi_estavel.jpg); }
 
-.button--state-success {
-  color: #FFF;
-  background: #a832c5 linear-gradient(#792285, #802f94) repeat-x;
-  border-color: #7c3086; }
+.card-2 .card-img,
+.card-2 .card-img-hovered {
+  background-image: var(--card-img-hovered-overlay), url(https://xadmin.s3.us-east-2.amazonaws.com/11/news/4770/image/medio/3dd82dd87bc261bf59735d035da5ef78.jpg); }
 
-.button--state-danger {
-  color: #900; }
+.card-3 .card-img,
+.card-3 .card-img-hovered {
+  background-image: var(--card-img-hovered-overlay), url(https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6e/e5/16.jpg); }
+
+.card-4 .card-img,
+.card-4 .card-img-hovered {
+  background-image: var(--card-img-hovered-overlay), url(https://www.winegrapesnews.com/wp-content/uploads/2020/05/top-5-de-vinos-franceses-te-animas-a-probarlos-en-casa-1-740x533.jpg); }
 
 /*Grilla */
 .grid-container {
@@ -65,35 +179,27 @@ h1 {
   text-align: center;
   justify-content: stretch;
   font-size: 1.5rem;
-  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno" "noticiaDos noticiaDos noticiaTres noticiaCuatro" "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno" "noticiaDos noticiaDos noticiaTres noticiaTres" "noticiaCuatro noticiaCuatro noticiaCinco noticiaCinco"; }
 
 .bannerUno {
   grid-area: bannerUno;
-  background-color: #6277a5; }
+  background-color: #e9e9e9; }
 
 .noticiaTres {
   grid-area: noticiaTres;
-  background-color: #80518f; }
+  background-color: #f3f3f3; }
 
 .noticiaDos {
   grid-area: noticiaDos;
-  background-color: #837a8f; }
+  background-color: #f3f3f3; }
 
 .noticiaCuatro {
   grid-area: noticiaCuatro;
-  background-color: #c263d4; }
+  background-color: #e9e9e9; }
 
 .noticiaCinco {
   grid-area: noticiaCinco;
-  background-color: #50D8C8; }
-
-.noticiaSeis {
-  grid-area: noticiaSeis;
-  background-color: #ab62ff; }
-
-.noticiaSiete {
-  grid-area: noticiaSiete;
-  background-color: #655c85; }
+  background-color: #e9e9e9; }
 
 /* generales */
 html {
@@ -110,3 +216,39 @@ body {
 .foto {
   width: 100%;
   height: 520px; }
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%; } }
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px; } }
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px; } }
+
+.pepito {
+  background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+  font-family: 'Rubik', sans-serif;
+  background: #455A64;
+  height: 100 !important;
+  overflow: hidden;
+  margin-top: 250px;
+  background: #262626;
+  color: #627482 !important;
+  margin-bottom: 0;
+  padding-bottom: 0 small;
+    padding-bottom-font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; }
+  .pepito .bold-text {
+    color: #989c9e !important; }
+  .pepito .mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; }
+  .pepito h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; }
+  .pepito .social {
+    font-size: 21px !important; }
+  .pepito .rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; }
